@@ -1,0 +1,46 @@
+Project Overview
+The Real-Time Chat Application is a fully-featured chat system built using the MERN (MongoDB, Express, React, Node.js) stack, incorporating Socket.io for real-time messaging. It offers secure JWT-based authentication, real-time communication, and group messaging, alongside an efficient, user-friendly interface styled with TailwindCSS and DaisyUI.
+
+System Features
+Real-time messaging: Users can chat in real-time with instant updates using Socket.io.
+Authentication and Authorization: Secure authentication through JWT.
+Group Chats: Users can create groups and communicate in group settings.
+Online Status: Tracks and displays the online status of users using Socket.io and React Context.
+Global State Management: Managed through Zustand for efficiency and performance.
+Error Handling: Comprehensive error handling both server-side and client-side.
+Responsive UI: Styled with TailwindCSS and DaisyUI for a modern, responsive interface.
+
+how to set up and run your prototype
+step 1 :
+Node.js: Ensure you have Node.js installed on your system.
+MongoDB: A local or cloud MongoDB instance (MongoDB Atlas).
+
+step 2 :
+Create a .env file at the root of the project containing environment variables such as:
+PORT=5000
+MONGO_DB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>?retryWrites=true&w=majority
+JWT_SECRET=your_jwt_secret_key
+there are 3 env file make sure to make change in all three.
+
+step 3 : run the following command in terminal
+npm install
+npm run dev
+
+Dependencies and Libraries Used
+
+Backend
+express: Web framework for creating RESTful APIs.
+mongoose: ODM for MongoDB, providing schema-based data modeling.
+socket.io: Enables real-time communication via WebSockets.
+jsonwebtoken: Library for handling JWT tokens used for authentication.
+cors: Middleware for enabling cross-origin requests.
+cookie-parser: Middleware for parsing cookies.
+
+Frontend
+react: JavaScript library for building user interfaces.
+zustand: Lightweight state management solution for managing global state.
+tailwindcss: Utility-first CSS framework for rapid UI development.
+daisyui: A component library built on TailwindCSS for clean, reusable UI components.
+Each of these libraries was chosen for their respective strengths in performance, scalability, and ease of use in a production-grade application.
+
+
